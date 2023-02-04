@@ -4,3 +4,4 @@
 direnv 2.32.2
 kind 0.14.0
 kubectl 1.24.0
+kustomize 4.5.7
