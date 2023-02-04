@@ -8,21 +8,22 @@ asdf plugin add kind
 # checkout git repo
 git clone https://github.com/MxNxPx/asdf-demo
 
-## old version
+## multi version
 # switch to old branch
-git checkout old
+git checkout multi
+# cd to a cluster dir
+cd clusters/dev
 # instal desired versions of tools with asdf
 asdf install
 # create cluster and apply cronjob
-kind create cluster
+kind create cluster --name $CLU_NAME
 kubectl apply -f cronjob.yaml
-
-## new version
-# switch to main branch
-git checkout main
+# cd to another cluster dir
+cd ../prd
 # instal desired versions of tools with asdf
 asdf install
 # create cluster and apply cronjob
-kind create cluster
+kind create cluster --name $CLU_NAME
 kubectl apply -f cronjob.yaml
 ```
+
