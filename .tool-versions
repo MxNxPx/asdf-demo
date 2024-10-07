@@ -3,7 +3,7 @@
 ##asdfdsa## asdf direnv setup --shell bash --version latest
 ##asdfdsa## kubectl krew install < /root/krew-plugin-list.txt
 ##asdfdsa## asdf reshim
-direnv 2.32.2
+direnv 2.35.0
 kind 0.17.0
 kubectl 1.25.3
 kustomize 5.0.0
